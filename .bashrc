@@ -61,8 +61,8 @@ if [[ $iatest -gt 0 ]]; then bind "set completion-ignore-case on"; fi
 if [[ $iatest -gt 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
 # Set the default editor
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=nano
+export VISUAL=nano
 alias spico='sudo pico'
 alias snano='sudo nano'
 alias vim='nvim'
@@ -97,6 +97,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Alias's for SSH
 # alias SERVERNAME='ssh YOURWEBSITE.com -l USERNAME -p PORTNUMBERHERE'
+alias homeserv='ssh 192.168.0.113 -l joshua -p 2222'
 
 # Alias's to change the directory
 alias web='cd /var/www/html'
