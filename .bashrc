@@ -873,3 +873,9 @@ fi
 if [[ $- == *i* ]] && command -v zoxide >/dev/null 2>&1; then
 	eval "$(zoxide init bash)"
 fi
+
+# dependency: aituin - https://atuin.sh/
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
