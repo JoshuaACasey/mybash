@@ -111,8 +111,8 @@ elif command -v vim >/dev/null 2>&1; then
 	export EDITOR=vim
 	export VISUAL=vim
 else
-	export EDITOR=vi
-	export VISUAL=vi
+	export EDITOR=nano
+	export VISUAL=zed
 fi
 command -v pico >/dev/null 2>&1 && alias spico='sudo pico'
 command -v nano >/dev/null 2>&1 && alias snano='sudo nano'
@@ -140,6 +140,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Alias's for SSH
 # alias SERVERNAME='ssh YOURWEBSITE.com -l USERNAME -p PORTNUMBERHERE'
+alias homeserv='ssh 192.168.0.113 -l joshua -p 2222'
 
 # Alias's to change the directory
 alias web='cd /var/www/html'
